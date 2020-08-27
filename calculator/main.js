@@ -39,8 +39,8 @@ calculator.addEventListener('click', e => {
 // To ignore anything where user clicks outside of calculator.
     if (target.matches('button')) {
 // Divide by zero ignore.       
-        if (operator === '/' && textContent === '0' && (!displayNumber.includes('.')) ) {
-            return alert('Don\'t divide by zero!')
+        if ( (operator === '/' && textContent === '0' && secondValue === true) ) {
+                return alert('Don\'t divide by zero!')
         }
 // Html buttons do not have data values so know they are selected.        
         if (!value) {
